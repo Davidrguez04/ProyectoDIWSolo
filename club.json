@@ -1,0 +1,28 @@
+{
+  "clubs": [
+    {
+      "id": "5c18",
+      "nombre": "aaaaa",
+      "contrasenia": "aaaaaa",
+      "email": "aaaaa@aaaaa.aaaaa"
+    },
+    {
+      "id": "5e66",
+      "nombre": "asdasd",
+      "contrasenia": "12",
+      "email": "fernan45616465@gmail.com"
+    },
+    {
+      "id": "7850",
+      "nombre": "asd",
+      "contrasenia": "12",
+      "email": "fernan4561646asdasd5@gmail.com"
+    },
+    {
+      "id": "120b",
+      "nombre": "Davidrgs34",
+      "contrasenia": "1234",
+      "email": "fernan4561646asdasd5@gmail.com"
+    }
+  ]
+}

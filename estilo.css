@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #333;
+    background-image: url('imagenes/Foto-Patagonia-portada-tours.jpg');
+}
+
+.container {
+    display: flex;
+    width: 800px;
+    height: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+    
+    
+}
+
+.left-panel {
+    width: 40%;
+    background-color: #555;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    padding: 20px;
+    text-align: center;
+}
+
+.right-panel {
+    width: 60%;
+    background: url('imagenes/road-background-m6p3fgdhzyg198fe.jpg') no-repeat center center fixed; /* URL de la imagen de fondo */
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    background-position: center;  /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    
+
+}
+
+.grupo {
+    width: 80%;
+    margin-bottom: 15px;
+}
+
+.grupo input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    text-align: center;
+}
+
+.grupo label {
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.boton {
+    background-color: #f08080;
+    color: white;
+    font-size: 1.1em;
+    padding: 10px;
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.boton:hover {
+    background-color: #ff6666;
+}
+
+.login-link {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #ffffff;
+}
+
+.login-link a {
+    color: #4A90E2;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    color: #333;
+}
+
+.modal-content .form-group input {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.close-button {
+    background-color: #f08080;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 1em;
+}
+ /* Animación para el modal */
+ @keyframes slideIn {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.modal-content h2 {
+    color: #4A90E2;
+}
+
+.modal-content .form-group input {
+    border: 2px solid #4A90E2;
+    border-radius: 5px;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.modal-content .form-group input:focus {
+    border-color: #f08080;
+}
+
+.close-button {
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 16px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.close-button:hover {
+    background-color: #f08080;
+}
+
+
+

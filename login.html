@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="left-panel">
+        <p>Registro<br>nuevo<br>usuario</p>
+    </div>
+  
+    <div class="right-panel">
+        <form id="registro-club" method="POST">
+        <div class="grupo">
+            <label for="usuario" class="etiqueta">Usuario</label>
+            <input id="usuarioR" type="text" class="entrada">
+        </div>
+        <div class="grupo">
+            <label for="contraseña" class="etiqueta">Contraseña</label>
+            <input id="contraseña2" type="password" class="entrada" data-type="password">
+        </div>
+        <div class="grupo">
+            <label for="repetir-contraseña" class="etiqueta">Repetir Contraseña</label>
+            <input id="repetir-contraseña" type="password" class="entrada" data-type="password">
+        </div>
+        <div class="grupo">
+            <label for="correo" class="etiqueta">Dirección de Correo</label>
+            <input id="correo" type="text" class="entrada">
+        </div>
+        <div class="grupo">
+            <button id="botonAniadir" type="submit" class="boton" value="Registrarse">Registrarse</button>
+        </div>
+        <p class="login-link">SI YA TIENE UNA CUENTA <a onclick="openModal()">PULSE AQUÍ</a></p>
+    </form>
+    </div>
+
+</div>
+
+<!-- Modal para el inicio de sesión -->
+<div class="modal" id="loginModal">
+    <div class="modal-content">
+        <h2>Iniciar Sesión</h2>
+        <!-- Formulario de inicio de sesión -->
+        <form id="login-form">
+            <div class="grupo">
+                <label for="usuario" class="etiqueta">USUARIO:</label>
+                <input type="text" id="usuario" class="entrada" name="login-username" placeholder="Ingrese su usuario" required>
+            </div>
+            <div class="grupo">
+                <label for="contraseña" class="etiqueta">CONTRASEÑA:</label>
+                <input type="password" id="contrasenia" class="entrada" name="login-password" placeholder="Ingrese su contraseña" required>
+            </div>
+            <div class="grupo">
+                <input type="submit" class="boton" value="Iniciar Sesión">
+            </div>
+        </form>
+    </div>
+</div>
+<script>
+    // Función para abrir el modal de inicio de sesión
+    function openModal() {
+        document.getElementById('loginModal').style.display = 'flex';
+    }
+
+    // Función para cerrar el modal de inicio de sesión
+    function closeModal() {
+        document.getElementById('loginModal').style.display = 'none';
+    }
+
+    // Evitar que el modal de inicio de sesión aparezca al registrarse
+    document.querySelector('.register-button').addEventListener('click', function(event) {
+        event.preventDefault();  // Evita el envío del formulario de registro
+        alert('Registro exitoso!');  // Simula el mensaje de registro exitoso
+    });
+</script><script src="java.js"></script>
+
+    
+</body>
+</html>
